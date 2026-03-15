@@ -42,6 +42,18 @@ h3 {
     font-size: 16px !important;
 }
 
+/* Improve tab visibility */
+button[data-baseweb="tab"] {
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    padding: 10px 20px !important;
+}
+
+/* Highlight active tab */
+button[data-baseweb="tab"][aria-selected="true"] {
+    border-bottom: 3px solid #ff4b4b !important;
+}
+
 /* Improve paragraph readability */
 p {
     font-size: 18px;
@@ -372,8 +384,14 @@ st.markdown("---")
 # -----------------------------
 # Tabs
 # -----------------------------
-tab1, tab2, tab3 = st.tabs(["Overview", "Detailed Results", "Assumptions"])
 
+st.markdown("### 👇 Click the sections below to explore the simulation")
+st.info("Use the tabs below to explore the simulation: Overview → Results → Assumptions")
+tab1, tab2, tab3 = st.tabs([
+    "📊 Overview",
+    "🔎 Detailed Results",
+    "📘 Assumptions"
+])
 # =============================
 # TAB 1 - OVERVIEW
 # =============================
