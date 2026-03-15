@@ -385,8 +385,8 @@ st.markdown("---")
 # Tabs
 # -----------------------------
 
-st.markdown("### 👇 Click the sections below to explore the simulation")
-st.info("Use the tabs below to explore the simulation: Overview → Results → Assumptions")
+#st.markdown("### 👇 Click the sections below to explore the simulation")
+#st.info("Use the tabs below to explore the simulation: Overview → Results → Assumptions")
 tab1, tab2, tab3 = st.tabs([
     "📊 Overview",
     "🔎 Detailed Results",
